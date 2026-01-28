@@ -1,0 +1,82 @@
+/* background and layout*/
+body {
+    background-color: palevioletred; /* background color */
+    color:black; /* text color */
+    font-family: Arial, Helvetica, sans-serif; /* font style */
+    margin: 0; /* removes default margin */
+    padding: 40px; /* adds padding around content */
+}
+
+/* name at top */
+.name {
+    font-size: 3rem; /* larger font size */
+    font-weight: 700; /* bold font weight */
+    color: whitesmoke; /* light text color */
+    text-align: center;
+    margin-bottom: 3=40px; /* space below the name */
+}
+
+/* sections */
+.section {
+    background-color: white; /* white background for sections */
+    padding: 25px; /* padding inside sections */
+    margin-bottom: 30px; /* space between sections */
+    border-radius: 12px; /* rounded corners */
+    border: 2px solid lightpink; /* border style */
+}
+
+/* headings */
+h2 {
+    font-size: 1.6rem; /* heading font size */
+    font-weight: 600; /* heading font weight */
+    color: darkred; /* heading text color */
+    margin-bottom: 10px; /* space below headings */
+}
+
+/* About section alignment */
+#About {
+    text-align: center; /* center align text in About section */
+}
+
+/* Expericne list */
+.experience ul {
+    list-style: none; /* remove default list style */
+    padding: 0; /* remove default padding */
+}
+
+.experience li {
+    background-color: lightpink; /* styled blocks */
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* Connect links */
+.connect ul {
+    list-style: none;
+    padding: 0;
+}
+
+.connect a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: bisque;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.connect a:hover {
+    background-color: darkorange
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: grey
+}
