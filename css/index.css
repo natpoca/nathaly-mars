@@ -13,7 +13,7 @@ body {
     font-weight: 700; /* bold font weight */
     color: whitesmoke; /* light text color */
     text-align: center;
-    margin-bottom: 3=40px; /* space below the name */
+    margin-bottom: 40px; /* space below the name */
 }
 
 /* sections */
@@ -62,7 +62,7 @@ h2 {
     display: inline-block;
     text-decoration: none;
     background-color: bisque;
-    color: white;
+    color: black;
     padding: 10px 18px;
     border-radius: 20px;
     font-weight: 500;
@@ -78,5 +78,5 @@ footer {
     text-align: center;
     margin-top: 40px;
     font-size: 0.9rem;
-    color: grey
+    color: darkred
 }
