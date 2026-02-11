@@ -7,6 +7,38 @@ body {
     padding: 40px; /* adds padding around content */
 }
 
+/* NAV */
+nav {
+    position: sticky; /* stretch goal */
+    top: 0;
+    background-color: white;
+    padding: 15px 20px;
+    border-bottom: 2px solid lightpink;
+    z-index: 1000;
+    margin: -40px -40px 40px -40px; /* nav stetch full width */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-weight: 600;
+    color: darkred;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+.nav-list a:hover {
+    background-color: lightpink;
+}
+
 /* name at top */
 .name {
     font-size: 3rem; /* larger font size */
@@ -34,43 +66,62 @@ h2 {
 }
 
 /* About section alignment */
-#About {
+#about {
     text-align: center; /* center align text in About section */
 }
 
-/* Expericne list */
-.experience ul {
-    list-style: none; /* remove default list style */
-    padding: 0; /* remove default padding */
-}
-
-.experience li {
-    background-color: lightpink; /* styled blocks */
+/* Experience section (Flexbox layout) */
+.job {
+    background-color: lightpink;
     padding: 15px;
-    margin-bottom: 12px;
-    border-radius: 8px;
-    font-weight: 500;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
-/* Connect links */
-.connect ul {
-    list-style: none;
-    padding: 0;
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
 }
 
-.connect a {
-    display: inline-block;
+.job-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.job-dates {
+    font-style: italic;
+    font-weight: 600;
+    color: darkred;
+    white-space: nowrap;
+}
+
+.job p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Connect section using Flexbox layout */
+.connect-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.connect-links a {
     text-decoration: none;
     background-color: bisque;
     color: black;
     padding: 10px 18px;
     border-radius: 20px;
     font-weight: 500;
-    margin-bottom: 10px;
 }
 
-.connect a:hover {
-    background-color: darkorange
+.connect-links a:hover {
+    background-color: darkorange;
 }
 
 /* footer */
@@ -78,5 +129,5 @@ footer {
     text-align: center;
     margin-top: 40px;
     font-size: 0.9rem;
-    color: darkred
+    color: darkred;
 }
