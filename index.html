@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="description" content="Personal webpage for Nathaly Rivera, Code the Dream student.">
 
-    <title>Week 11</title>
+    <title>Week 12</title>
     <link rel="stylesheet" href="css/index.css">
   </head>
 
   <body>
     <nav>
       <ul class="nav-list">
+        <li><a href="#leave-a-message">Leave a Message</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -19,7 +20,7 @@
       </ul>
     </nav>
 
-    <h1 class="name">Who is Nathaly?</h1>
+    <h1 class="name">All About Nathaly!</h1>
 
     <section id="about" class="section">
       <h2>About</h2>
@@ -74,6 +75,31 @@
           <a href="https://github.com/natpoca">GitHub</a>
       </div>
     </section>
+
+<section id="leave-a-message" class="section">
+  <h2>Leave a Message</h2>
+
+  <form name="leave_message">
+    <label>Name:</label>
+    <input type="text" name="usersName" required>
+    <br>
+
+    <label>Email:</label>
+    <input type="email" name="usersEmail" required>
+    <br>
+
+    <label>Message:</label>
+    <textarea name="usersMessage" required></textarea>
+    <br>
+
+    <button type="submit">Submit Message</button>
+  </form>
+</section>
+
+<section id="messages" class="section">
+  <h2>Messages</h2>
+  <ul></ul>
+</section>
 
     <script src="js/index.js"></script>
   </body>

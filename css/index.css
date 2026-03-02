@@ -1,7 +1,7 @@
 /* background and layout*/
 body {
-    background-color: palevioletred; /* background color */
-    color:black; /* text color */
+    background-color: #f4f6f8; /* background color */
+    color: #111827; /* text color */
     font-family: Arial, Helvetica, sans-serif; /* font style */
     margin: 0; /* removes default margin */
     padding: 40px; /* adds padding around content */
@@ -13,7 +13,7 @@ nav {
     top: 0;
     background-color: white;
     padding: 15px 20px;
-    border-bottom: 2px solid lightpink;
+    border-bottom: 2px solid #d1d5db;
     z-index: 1000;
     margin: -40px -40px 40px -40px; /* nav stetch full width */
 }
@@ -30,20 +30,21 @@ nav {
 .nav-list a {
     text-decoration: none;
     font-weight: 600;
-    color: darkred;
+    color: #1F2A44;
     padding: 8px 12px;
     border-radius: 12px;
 }
 
 .nav-list a:hover {
-    background-color: lightpink;
+    background-color: #e5e7eb;
+    text-decoration: underline;
 }
 
 /* name at top */
 .name {
     font-size: 3rem; /* larger font size */
     font-weight: 700; /* bold font weight */
-    color: whitesmoke; /* light text color */
+    color: #1F2A44; /* light text color */
     text-align: center;
     margin-bottom: 40px; /* space below the name */
 }
@@ -54,7 +55,7 @@ nav {
     padding: 25px; /* padding inside sections */
     margin-bottom: 30px; /* space between sections */
     border-radius: 12px; /* rounded corners */
-    border: 2px solid lightpink; /* border style */
+    border: 2px solid #d1d5db; /* border style */
 }
 
 /* headings */
@@ -72,7 +73,7 @@ h2 {
 
 /* Experience section (Flexbox layout) */
 .job {
-    background-color: lightpink;
+    background-color: #E5E7EB;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -93,7 +94,7 @@ h2 {
 .job-dates {
     font-style: italic;
     font-weight: 600;
-    color: darkred;
+    color: #1F2A44;
     white-space: nowrap;
 }
 
@@ -115,7 +116,8 @@ h2 {
 }
 
 #skills li {
-    background-color: lightpink;
+    background-color: #2A9D8F;
+    color: white;
     padding: 10px 16px;
     border-radius: 18px;
     font-weight: 600;
@@ -132,16 +134,16 @@ h2 {
 
 .connect-links a {
     text-decoration: none;
-    background-color: bisque;
-    color: black;
+    background-color: #2A9D8F;
+    color: white;
     padding: 10px 18px;
     border-radius: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.connect-links a:hover {
-    background-color: darkorange;
+.connect-links a:hover { 
+    background-color: #1F7A73;
 }
 
 /* footer */
@@ -149,7 +151,7 @@ footer {
     text-align: center;
     margin-top: 40px;
     font-size: 0.9rem;
-    color: darkred;
+    color: #1F2A44;
 }
 
 /* Tablet Styles */
