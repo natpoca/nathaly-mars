@@ -61,3 +61,28 @@ messageForm.addEventListener("submit", function (event) {
 
     messageForm.reset();
     });
+
+   // -- Github Repos -- 
+   
+   fetch("https://api.github.com/users/natpoca/repos")
+   .then (function (response) {
+    return response.json ();
+   })
+   .then(function (repositories) {
+    console.log(repositories);
+
+    const projectList = document.getElementById("projects-list");
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+    }
+   })
+   .catch(function (error) {
+    console.log("Error fetching repositories:", error);
+
+    const projectSection = document.getElementById("projects");
+    projectSection.innerHTML +=
+    "<p>Sorry, something went wrong while loading projects.</p>";
+   });

@@ -123,6 +123,25 @@ h2 {
     font-weight: 600;
 }
 
+/* Projects Section */
+#projects-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+#projects-list li {
+    background-color: #E5E7EB;
+    padding: 10px 16px;
+    border-radius: 18px;
+    font-weight: 600;
+}
+
 /* Connect section using Flexbox layout */
 .connect-links {
     display: flex;
