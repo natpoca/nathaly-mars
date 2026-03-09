@@ -1,6 +1,6 @@
 // --- Footer ---
 
-// footer and add to body
+// Creates footer and add to body
 const body = document.querySelector("body");
 const footer = document.createElement("footer");
 body.appendChild(footer);
@@ -16,7 +16,7 @@ footer.appendChild(copyright);
 
 // --- Skills ---
 
-const skills = ["HTML", "CSS", "JavaScript", "Git", "Github", "VSCode", "SQL", "Tableau"];
+const skills = ["HTML", "CSS", "JavaScript", "Git", "GitHub", "VSCode", "SQL", "Tableau"];
 
 const skillsSection = document.querySelector("#skills");
 const skillsList = skillsSection.querySelector("ul");
@@ -48,7 +48,7 @@ messageForm.addEventListener("submit", function (event) {
     <span> ${usersMessage}</span>`;
 
     const removeButton = document.createElement("button");
-    removeButton.innerText = "remove";
+    removeButton.innerText = "Remove";
     removeButton.type = "button";
 
     removeButton.addEventListener("click", function () {
@@ -75,7 +75,13 @@ messageForm.addEventListener("submit", function (event) {
 
     for (let i = 0; i < repositories.length; i++) {
         const project = document.createElement("li");
-        project.innerText = repositories[i].name;
+
+        const link = document.createElement("a");
+        link.href = repositories[i].html_url;
+        link.target = "_blank";
+        link.innerText = repositories[i].name;
+
+        project.appendChild(link);
         projectList.appendChild(project);
     }
    })

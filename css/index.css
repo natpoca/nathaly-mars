@@ -66,6 +66,12 @@ h2 {
     margin-bottom: 10px; /* space below headings */
 }
 
+.profile-pic {
+    width: 180px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
 /* About section alignment */
 #about {
     text-align: center; /* center align text in About section */
@@ -209,15 +215,6 @@ footer {
 
 /* Mobile Styles */
 
-#skills ul {
-    flex-direction: column;
-    align-items: center;
-}
-#skills li {
-    width: 100%;
-    text-align: center;
-}
-
 @media (max-width: 480px) {
     body {
         padding: 15px;
@@ -251,5 +248,14 @@ footer {
     .connect-links {
         flex-direction: column;
         align-items: center;
+    }
+        #skills ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+#skills li {
+    width: 100%;
+    text-align: center;
     }
 }
